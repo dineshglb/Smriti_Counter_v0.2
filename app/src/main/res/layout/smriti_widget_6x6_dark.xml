@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root_6x6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_bg_dark"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:letterSpacing="0.12"
+            android:text="SMRITI"
+            android:textColor="#D4A36A"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_widget_streak_6x6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0-day streak"
+            android:textColor="#E6B87D"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_widget_date_6x6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Today"
+        android:textColor="#9A8D7E"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_widget_swaman_6x6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="I am a peaceful soul"
+        android:textColor="#B8AA99"
+        android:textSize="13sp"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:id="@+id/widget_tap_area_6x6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_widget_count_6x6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="58sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_widget_target_6x6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="of 108  •  0s / 600s"
+            android:textColor="#B8AA99"
+            android:textSize="13sp" />
+
+        <Chronometer
+            android:id="@+id/chrono_widget_6x6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="#E6B87D"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/pb_widget_6x6"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="10dp"
+            android:max="108"
+            android:progress="0"
+            android:progressTint="#E6B87D"
+            android:progressBackgroundTint="#362D25" />
+
+        <TextView
+            android:id="@+id/tv_widget_status_6x6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Tap center to +1"
+            android:textColor="#9A8D7E"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btn_widget_timer_6x6"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/widget_btn_dark"
+            android:gravity="center"
+            android:text="Start"
+            android:textColor="#E6B87D"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btn_widget_bindu_6x6"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@drawable/widget_btn_dark"
+            android:gravity="center"
+            android:text="Bindu Focus"
+            android:textColor="#D4A36A"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btn_widget_undo_6x6"
+            android:layout_width="0dp"
+            android:layout_height="34dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/widget_btn_dark"
+            android:gravity="center"
+            android:text="-1 Undo"
+            android:textColor="#D8CBB8"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btn_widget_reset_6x6"
+            android:layout_width="0dp"
+            android:layout_height="34dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/widget_btn_dark"
+            android:gravity="center"
+            android:text="Reset"
+            android:textColor="#E08A7B"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btn_widget_open_6x6"
+            android:layout_width="0dp"
+            android:layout_height="34dp"
+            android:layout_weight="1"
+            android:background="@drawable/widget_btn_dark"
+            android:gravity="center"
+            android:text="History"
+            android:textColor="#E6B87D"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

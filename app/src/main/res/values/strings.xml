@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Smriti Counter</string>
+    <string name="widget_2x2_dark">Smriti 2x2 Dark (Minimal)</string>
+    <string name="widget_2x2_light">Smriti 2x2 Light (Minimal)</string>
+    <string name="widget_4x4_dark">Smriti 4x4 Dark</string>
+    <string name="widget_4x4_light">Smriti 4x4 Light</string>
+    <string name="widget_6x6_dark">Smriti 6x6 Dark (Extended)</string>
+    <string name="widget_6x6_light">Smriti 6x6 Light (Extended)</string>
+</resources>

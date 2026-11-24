@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#171310"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Smriti Counter"
+            android:textColor="#F5EFE6"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_today_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Today: 0 / 108  •  0s / 600s"
+            android:textColor="#E6B87D"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <!-- Soul Consciousness Timer & Bindu Mode -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#201A16"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Soul Consciousness Timer"
+                android:textColor="#F5EFE6"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_timer_live"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Timer stopped • Today: 0s"
+                android:textColor="#B8AA99"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_toggle_timer"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:backgroundTint="#E6B87D"
+                    android:text="Start Timer"
+                    android:textColor="#171310"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_open_bindu"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#2B231D"
+                    android:text="Bindu Focus"
+                    android:textColor="#E6B87D"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Swaman Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Today's Swaman"
+            android:textColor="#F5EFE6"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner_swaman"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="8dp"
+            android:background="#241E19"
+            android:paddingHorizontal="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_custom_swaman"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:background="#241E19"
+                android:hint="Add custom Swaman from Murli..."
+                android:paddingHorizontal="12dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#7C7064"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/btn_add_swaman"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:backgroundTint="#2B231D"
+                android:text="Add"
+                android:textColor="#E6B87D" />
+        </LinearLayout>
+
+        <!-- Dual Daily Targets -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Daily Targets (Count &amp; Seconds)"
+            android:textColor="#F5EFE6"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_preset_27"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="6dp"
+                android:backgroundTint="#2B231D"
+                android:text="27"
+                android:textColor="#F5EFE6" />
+
+            <Button
+                android:id="@+id/btn_preset_54"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="6dp"
+                android:backgroundTint="#2B231D"
+                android:text="54"
+                android:textColor="#F5EFE6" />
+
+            <Button
+                android:id="@+id/btn_preset_108"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="6dp"
+                android:backgroundTint="#2B231D"
+                android:text="108"
+                android:textColor="#E6B87D" />
+
+            <Button
+                android:id="@+id/btn_preset_1008"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:backgroundTint="#2B231D"
+                android:text="1008"
+                android:textColor="#F5EFE6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_target"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="6dp"
+                android:background="#241E19"
+                android:hint="Count"
+                android:inputType="number"
+                android:paddingHorizontal="10dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#7C7064" />
+
+            <EditText
+                android:id="@+id/et_seconds_target"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="6dp"
+                android:background="#241E19"
+                android:hint="Seconds"
+                android:inputType="number"
+                android:paddingHorizontal="10dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#7C7064" />
+
+            <Button
+                android:id="@+id/btn_save_target"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:backgroundTint="#E6B87D"
+                android:text="Save"
+                android:textColor="#171310"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_undo"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#241E19"
+                android:text="-1 Undo"
+                android:textColor="#D8CBB8" />
+
+            <Button
+                android:id="@+id/btn_reset"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_weight="1"
+                android:backgroundTint="#241E19"
+                android:text="Reset Today"
+                android:textColor="#E08A7B" />
+        </LinearLayout>
+
+        <!-- Preferences -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="Preferences"
+            android:textColor="#F5EFE6"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#201A16"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <Switch
+                android:id="@+id/switch_vibration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="6dp"
+                android:text="Haptic vibration on widget tap"
+                android:textColor="#D8CBB8"
+                android:textSize="14sp" />
+
+            <Switch
+                android:id="@+id/switch_tap_chime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="6dp"
+                android:text="Soft chime on every widget tap"
+                android:textColor="#D8CBB8"
+                android:textSize="14sp" />
+
+            <Switch
+                android:id="@+id/switch_sound"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="6dp"
+                android:text="Bell chime when daily target reached"
+                android:textColor="#D8CBB8"
+                android:textSize="14sp" />
+
+            <Switch
+                android:id="@+id/switch_streak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="6dp"
+                android:text="Show streak counter on widget"
+                android:textColor="#D8CBB8"
+                android:textSize="14sp" />
+
+            <Switch
+                android:id="@+id/switch_rotate_swaman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="6dp"
+                android:text="Auto-rotate Swaman daily"
+                android:textColor="#D8CBB8"
+                android:textSize="14sp" />
+
+            <Switch
+                android:id="@+id/switch_traffic_control"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="6dp"
+                android:text="Hourly Traffic Control reminder"
+                android:textColor="#D8CBB8"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Spiritual Chart & History -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Spiritual Chart &amp; History"
+                android:textColor="#F5EFE6"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_export_chart"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:backgroundTint="#2B231D"
+                android:text="Copy Chart"
+                android:textColor="#E6B87D"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_today_breakdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#201A16"
+            android:padding="12dp"
+            android:text="Amrit Vela: 0 • Daytime: 0 • Evening: 0"
+            android:textColor="#E6B87D"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_weekly_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#201A16"
+            android:padding="12dp"
+            android:text="7-Day Total: 0 taps • 0s"
+            android:textColor="#D8CBB8"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#201A16"
+            android:padding="14dp"
+            android:text="No history yet."
+            android:textColor="#D8CBB8"
+            android:textSize="13sp"
+            android:lineSpacingExtra="6dp" />
+    </LinearLayout>
+</ScrollView>
