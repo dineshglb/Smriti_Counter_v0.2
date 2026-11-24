@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0D0A08"
+    android:background="@drawable/bindu_glow"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="28dp">
@@ -11,28 +11,23 @@
         android:id="@+id/tv_bindu_swaman"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:gravity="center"
         android:text="I am a point of light"
-        android:textColor="#D4A36A"
+        android:textColor="#FFFFFF"
         android:textSize="16sp"
         android:textStyle="italic" />
 
     <FrameLayout
-        android:layout_width="220dp"
-        android:layout_height="220dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginBottom="36dp">
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
         <View
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/bindu_glow" />
-
-        <View
-            android:layout_width="14dp"
-            android:layout_height="14dp"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
             android:layout_gravity="center"
-            android:background="#FFFDF7" />
+            android:background="@drawable/bindu_dot" />
     </FrameLayout>
 
     <TextView
@@ -40,7 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="00:00"
-        android:textColor="#F5EFE6"
+        android:textColor="#FFFFFF"
         android:textSize="36sp"
         android:textStyle="bold" />
 
@@ -49,17 +44,18 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
         android:text="Stay in soul consciousness"
-        android:textColor="#9A8D7E"
+        android:textColor="#F5EFE6"
         android:textSize="13sp" />
 
     <Button
         android:id="@+id/btn_bindu_done"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:layout_marginTop="32dp"
-        android:backgroundTint="#E6B87D"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#33FFFFFF"
         android:paddingHorizontal="28dp"
         android:text="Save &amp; Finish"
-        android:textColor="#171310"
+        android:textColor="#FFFFFF"
         android:textStyle="bold" />
 </LinearLayout>
